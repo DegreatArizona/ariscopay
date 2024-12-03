@@ -1,2 +1,0 @@
-# ariscopay
-Bill Payment App
