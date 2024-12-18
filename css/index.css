@@ -111,15 +111,7 @@ header{
   align-items: center;
   flex-direction: column;
 }
-.featurette-divider {
-  margin: 5rem 0;
-}
 
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem;
-}
 .h{
   font-size: 2rem;
 }
@@ -257,7 +249,8 @@ header{
     gap: 20px;
   }
   .navbar-nav{
-    margin-right: 130px;
+    margin-right: 180px;
+    margin-left: -100px;
     display: flex;
   }
   .footer {
