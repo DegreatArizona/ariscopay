@@ -36,8 +36,6 @@ header{
   background-image: url('/image/header.svg');
   background-position: center;
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
   width: 100%;
   padding-top: 10px;
 }
@@ -76,29 +74,15 @@ header{
   border-radius: 30px;
   min-width: 50px;
 }
-.hero .btn1:hover{
-  border: 1px solid var(--lorange);
-  background: none;
-  color: var(--lorange);
-}
-.hero .btn1{
-  background: var(--lorange);
-  font-weight: 500;
-  color: #FFF;
-}
-.hero .btn2:hover{
+.hero .btn:hover{
   background: var(--lorange);
   color: #FFF;
 }
-.hero .btn2{
+.hero .btn{
   border: 1px solid var(--lorange);
   font-weight: 500;
   color: var(--lorange);
-}
-.hero .btn-bg{
-  background-image: url('/image/frame.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;
 }
 .service-body img{
   width: 100%;
@@ -209,18 +193,16 @@ header{
   /* RESPONSIVE CSS
   -------------------------------------------------- */
 @media (max-width: 768px) /*Mobile*/ {
-  .hero .btn{
-    width: 100%;
-  }
   .hero .btn-bg{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 7px;
-    gap: 20px;
     border-radius: 20px;
-    flex-direction: column;
     background-color: #FFF;
+    background-image: url('/image/frame.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -228,21 +210,20 @@ header{
   .hero .ann{
     width: 330px;
   }
-  .hero .btn{
-    width: 50%;
-  }
   .hero .btn-bg{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 7px;
-    gap: 20px;
     border-radius: 20px;
-    flex-direction: row;
     background: #FFF;
+    width: 400px;
+    background-image: url('/image/frame.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
   nav{
-    margin: 20px 40px;
+    margin: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
