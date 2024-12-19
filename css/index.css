@@ -39,12 +39,11 @@ nav {
   border: 2px solid var(--orange);
   border-radius: 50px;
 }
-header{
+.header{
   background-image: url('/image/header.svg');
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding-top: 10px;
 }
 .nav-link:hover{
   color: var(--lorange);
@@ -406,7 +405,7 @@ input[type="checkbox"]:checked::after {
     background-position: center;
   }
   nav{
-    margin: 10px 40px;
+    margin: 0px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -427,5 +426,18 @@ input[type="checkbox"]:checked::after {
   }
   .onboard2 {
     padding: 60px 30px;
+  }
+  .nav-btn{
+    padding: 15px 30px;
+    border-radius: 50px;
+  }
+  .hero .hero-img{
+    width: 350px;
+    height: 400px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
