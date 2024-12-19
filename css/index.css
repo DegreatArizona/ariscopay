@@ -246,7 +246,7 @@ header{
 
 /* Onboarding section */
 .onboard1 h1 {
-  font-size: 56px;
+  font-size: 3rem;
   color: white;
 }
 
@@ -260,21 +260,56 @@ header{
   font-size: 1.1rem;
   margin-top: 15px;
 }
+input[type="radio"], input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: #333;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+input[type="radio"]:checked, 
+input[type="checkbox"]:checked {
+  background-color: #FFF;
+  border: 1px solid var(--orange);
+}
+input[type="radio"]:checked::after, 
+input[type="checkbox"]:checked::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the element */
+  background-color: var(--lorange);
+}
 
 .onboard2-1 h2 {
   font-size: 1.7rem;
   color: #333;
 }
-.onboard2 .auth input::placeholder{
+.onboard2 .rem{
   font-size: 0.9rem;
-  font-weight: 100;
+  justify-content: space-between;
+}
+.onboard2 .auth .form-control::placeholder{
+  font-size: 0.9rem;
+  font-weight: 300;
   font-family: Verdana, "Poppins", Tahoma, sans-serif;
 }
-.onboard2 .auth input:hover{
+.onboard2 .auth .form-control:hover{
   border: none;
   outline: none;
 }
-.onboard2 .auth input{
+.onboard2 .auth .form-control{
   border: none;
   background: seashell;
   padding: 11px;
