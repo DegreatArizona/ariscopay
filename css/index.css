@@ -262,7 +262,7 @@ header{
 }
 
 .onboard2-1 h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #333;
 }
 .onboard2 .auth input::placeholder{
@@ -281,10 +281,7 @@ header{
   border-radius: 10px;
 }
 .onboard2-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  text-align: center;
 }
 .onboard2-1 img {
   width: 350px;
@@ -294,7 +291,7 @@ header{
   color: #555;
   font-size: 1rem;
   text-align: center;
-  margin-top: 15px;
+  margin: 15px -15px;
 }
 
 /* Buttons */
