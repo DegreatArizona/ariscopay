@@ -65,7 +65,7 @@ header{
   color: #FFF;
 }
 .hero h1{
-  font-size: 56px;
+  font-size: 3rem;
   font-weight: bold;
   color: #FFF;
 }
@@ -227,7 +227,6 @@ header{
   padding: 30px 10px;
 }
 
-/* Content remains above the background */
 .onboard .row {
   position: relative;
   z-index: 2;
@@ -244,7 +243,6 @@ header{
   border-radius: 50px;
 }
 
-/* Onboarding section */
 .onboard1 h1 {
   font-size: 3rem;
   color: white;
@@ -252,13 +250,17 @@ header{
 
 .onboard1 h1 span {
   font-weight: bold;
-  color: #f1c40f; /* You can adjust the color */
+  color: #f1c40f;
 }
 
 .onboard1 p {
   color: white;
   font-size: 1.1rem;
   margin-top: 15px;
+}
+input[type="radio"]:focus, input[type="checkbox"]:focus {
+  outline: 1px solid var(--lorange);
+  box-shadow: none;
 }
 input[type="radio"], input[type="checkbox"] {
   appearance: none;
@@ -273,6 +275,7 @@ input[type="radio"], input[type="checkbox"] {
   display: inline-block;
   position: relative;
   margin-right: 10px;
+  
 }
 input[type="radio"]:checked, 
 input[type="checkbox"]:checked {
@@ -286,9 +289,9 @@ input[type="checkbox"]:checked::after {
   height: 15px;
   border-radius: 50%;
   position: absolute;
-  top: 50%; /* Position from the top */
-  left: 50%; /* Position from the left */
-  transform: translate(-50%, -50%); /* Center the element */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
   background-color: var(--lorange);
 }
 
@@ -305,10 +308,12 @@ input[type="checkbox"]:checked::after {
   font-weight: 300;
   font-family: Verdana, "Poppins", Tahoma, sans-serif;
 }
-.onboard2 .auth .form-control:hover{
-  border: none;
-  outline: none;
+.onboard2 .auth .form-control:active,
+.onboard2 .auth .form-control:focus {
+  outline: 1px solid var(--lorange);
+  box-shadow: none;
 }
+
 .onboard2 .auth .form-control{
   border: none;
   background: seashell;
@@ -329,7 +334,6 @@ input[type="checkbox"]:checked::after {
   margin: 15px -15px;
 }
 
-/* Buttons */
 .onboard2-2 .btn {
   width: 100%;
   margin-top: 20px;
@@ -354,7 +358,6 @@ input[type="checkbox"]:checked::after {
   color: var(--lorange);
 }
 
-/* Disclaimer */
 .onboard2-3 {
   text-align: center;
   font-size: 0.9rem;
