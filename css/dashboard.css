@@ -1,0 +1,246 @@
+:root{
+    --primary: rgb(246, 107, 3);
+    --secondary: rgb(249, 115, 22);
+  }
+  /* GLOBAL STYLES
+      --------------------------------------------- */
+body {
+    font-family: "Poppins";
+    font-weight: 400;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9; /*E0E0E0*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display";
+    font-weight: 900;
+}
+a{
+    color: var(--secondary);
+    text-decoration-line: none;
+  }
+input{
+    outline: none;
+  }
+.header .user-name small{
+    font-size: 0.7rem;
+}
+.header{
+    height: auto !important; 
+    transform: translateX(0px);
+    box-shadow: -1px 0px 10px var(--secondary);
+}
+main{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.load {
+    background: rgba(255, 232, 213, 0.8);
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+.header .pro-top-pic img{
+    border-radius:5rem; 
+    width:45px; 
+    height:45px; 
+    margin-right:10px;
+}
+.header .head-icon a{
+    color: black;
+}
+.header .user-name {
+    line-height: 15px;
+}
+.header .user-name a{
+    color: black;
+    font-size: 0.9rem;
+}
+.gradient-btn {
+    background: linear-gradient(
+      90deg,
+      var(--primary),
+      var(--secondary)
+    );
+    border: none;
+    color: white; 
+    transition: 0.5s;
+}
+  
+.gradient-btn:hover {
+    background: linear-gradient(
+      90deg,
+      var(--secondary),
+      var(--primary)
+    ); 
+    transform: scale(1.05);
+    color: #FFF;
+}
+.heading{
+    background:linear-gradient(
+        90deg,
+        var(--secondary),
+        var(--primary)
+      );
+      color: #FFF;
+      border-radius: 1.2rem;
+}
+.heading .card-title span{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.heading .card-title p{
+    font-size: 1.7rem;
+    margin-left: 2px;
+}
+.heading .card-title .btn{
+    background: #FFF;
+    color: var(--secondary);
+    font-size: 0.8rem;
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: 600;
+}
+.heading .card-title {
+    margin-bottom: -15px;
+}
+.heading .card-subtitle a:hover{
+    text-decoration: underline;
+}
+.heading .card-subtitle a{
+    color: #FFF;
+}
+.heading .card-subtitle{
+    font-size: 0.8rem;
+}
+.ann span{
+    font-size: 0.8rem;
+}
+.ann i{
+    color: var(--secondary);
+}
+.card{
+    border: none;
+    border-radius: 1.2rem;
+}
+.announce i{
+    padding: 5px;
+    font-size: 1.3rem;
+    color: var(--secondary);
+    font-weight: bold;
+}
+.announce marquee{
+    font-size: 0.8rem;
+}
+.announce{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bar a .fa-bank{
+    font-size: 3rem;
+}
+.footer-bar span {
+    color: #333;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.footer-bar a {
+    text-align: center;
+}
+.footer-bar a i{
+    display: block;
+    font-size: 1.5rem;
+}
+.footer-bar{
+    display: flex;
+    justify-content: space-around;
+    background: #FFF;
+    padding: 10px ;
+}
+.menu-body .card .card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-body .card i:hover{
+    translate: scale(1.05);
+}
+.menu-body .menu-body2 .card i{
+    font-size: 1.2rem;
+}
+.menu-body .card i{
+    display: block;
+    font-size: 1.5rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    width: 54px;
+    padding: 14px 0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.transaction-container i {
+    color: var(--secondary);
+}
+.transaction-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    padding: 10px;
+}
+.tnx-slider {
+    margin-left: -25px;
+    margin-bottom: -2px;
+}
+.tnx-slider .transaction a:hover{
+    background: #F9F9F9F9;
+    font-weight: bold;
+}
+.tnx-slider .transaction a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #333;
+    padding: 10px 5px;
+    border-radius: 0.7rem;
+}
+.status.success {
+    color: #34a853; /* Green */
+}
+.status.pending {
+    color: #fbbc05; /* Yellow */
+}
+.status.failed {
+    color: #ea4335; /* Red */
+}
+
+  
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+@media (max-width: 768px) /*Mobile*/ {}
+@media (min-width: 769px) /*PC*/ {}

@@ -18,16 +18,19 @@
     const passwordField = document.getElementById('password');
     const confirmPasswordField = document.getElementById('rpassword');
 
-    // Real-time validation for password match
+    // validation for password match
     confirmPasswordField.addEventListener('input', () => {
         const pwd = passwordField.value;
         const rpwd = confirmPasswordField.value;
 
         if (pwd !== rpwd) {
             confirmPasswordField.style.border = "2px solid red";
+            confirmPasswordField.style.outline = "none";
         } else {
-            document.getElementById('pwd').style.border = "2px solid green";
+            document.getElementById('password').style.border = "2px solid green";
             confirmPasswordField.style.border = "2px solid green";
+            document.getElementById('password').style.outline = "none";
+            confirmPasswordField.style.outline = "none";
         }
     });
 
@@ -43,4 +46,6 @@
         }
     });
 
+
     
+

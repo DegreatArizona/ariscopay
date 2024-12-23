@@ -1,6 +1,6 @@
 :root{
-  --orange: rgb(246, 107, 3);
-  --lorange: rgb(249, 115, 22);
+  --primary: rgb(246, 107, 3);
+  --secondary: rgb(249, 115, 22);
 }
 /* GLOBAL STYLES
     --------------------------------------------- */
@@ -21,7 +21,7 @@ h6 {
   font-weight: 900;
 }
 a{
-  color: var(--lorange);
+  color: var(--secondary);
   text-decoration-line: none;
 }
 input{
@@ -36,7 +36,7 @@ input{
   margin: 3px 0; 
 }
 nav {
-  border: 2px solid var(--orange);
+  border: 2px solid var(--primary);
   border-radius: 50px;
 }
 .header{
@@ -46,7 +46,7 @@ nav {
   width: 100%;
 }
 .nav-link:hover{
-  color: var(--lorange);
+  color: var(--secondary);
 }
 .nav-link{
   color: #413e3e;
@@ -69,7 +69,7 @@ nav {
   color: #FFF;
 }
 .hero .ann span{
-  background: var(--orange);
+  background: var(--primary);
   color: #FFF;
   padding: 5px 20px;
   border-radius: 15px;
@@ -81,13 +81,13 @@ nav {
   min-width: 50px;
 }
 .hero .btn:hover{
-  background: var(--lorange);
+  background: var(--secondary);
   color: #FFF;
 }
 .hero .btn{
-  border: 1px solid var(--lorange);
+  border: 1px solid var(--secondary);
   font-weight: 500;
-  color: var(--lorange);
+  color: var(--secondary);
   width: 100%;
 }
 .service-body img{
@@ -109,8 +109,8 @@ nav {
 .gradient-btn {
   background: linear-gradient(
     90deg,
-    var(--orange),
-    var(--lorange)
+    var(--primary),
+    var(--secondary)
   );
   border: none;
   color: white; 
@@ -120,13 +120,14 @@ nav {
 .gradient-btn:hover {
   background: linear-gradient(
     90deg,
-    var(--lorange),
-    var(--orange)
+    var(--secondary),
+    var(--primary)
   ); 
   transform: scale(1.05);
+  color: #FFF;
 }
 .footer-section a:hover{
-  color: var(--lorange);
+  color: var(--secondary);
 }
 .footer-section ul li{
   margin-left: -30px;
@@ -185,7 +186,7 @@ nav {
   transition: all 0.3s ease;
 }
 .faq .accordion-button:not(.collapsed) {
-  color: var(--orange);
+  color: var(--primary);
   background-color: #FFF;
 }
 .faq .accordion-button:focus {
@@ -193,7 +194,7 @@ nav {
   border-color: rgba(0, 0, 0, .125);
 }
 .faq .accordion-header {
-  border-left: 4px solid var(--lorange);
+  border-left: 4px solid var(--secondary);
   background: #FFF;
 }
 .onboard::before {
@@ -258,7 +259,7 @@ nav {
   margin-top: 15px;
 }
 input[type="radio"]:focus, input[type="checkbox"]:focus {
-  outline: 1px solid var(--lorange);
+  outline: 1px solid var(--secondary);
   box-shadow: none;
 }
 input[type="radio"], input[type="checkbox"] {
@@ -279,7 +280,7 @@ input[type="radio"], input[type="checkbox"] {
 input[type="radio"]:checked, 
 input[type="checkbox"]:checked {
   background-color: #FFF;
-  border: 1px solid var(--orange);
+  border: 1px solid var(--primary);
 }
 input[type="radio"]:checked::after, 
 input[type="checkbox"]:checked::after {
@@ -291,9 +292,15 @@ input[type="checkbox"]:checked::after {
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  background-color: var(--lorange);
+  background-color: var(--secondary);
 }
-
+#password{
+  position: relative;
+}
+.pwd{
+  position: absolute;
+  right: 11%;
+}
 .onboard2-1 h2 {
   font-size: 1.7rem;
   color: #333;
@@ -309,7 +316,7 @@ input[type="checkbox"]:checked::after {
 }
 .onboard2 .auth .form-control:active,
 .onboard2 .auth .form-control:focus {
-  outline: 1px solid var(--lorange);
+  outline: 1px solid var(--secondary);
   box-shadow: none;
 }
 
@@ -338,23 +345,23 @@ input[type="checkbox"]:checked::after {
   margin-top: 20px;
 }
 .onboard2-2 .btn1 {
-  border: 1px solid var(--lorange);
-  color: var(--lorange);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
   padding: 11px 0;
 }
 .onboard2-2 .btn1:hover {
-  background: var(--lorange);
+  background: var(--secondary);
   color: #FFF;
 }
 .onboard2-2 .btn2 {
-  background: var(--lorange);
+  background: var(--secondary);
   color: #FFF;
   padding: 11px 0;
 }
 .onboard2-2 .btn2:hover {
   background: none;
-  border: 1px solid var(--lorange);
-  color: var(--lorange);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
 }
 
 .onboard2-3 {
@@ -385,6 +392,9 @@ input[type="checkbox"]:checked::after {
     background-image: url('/image/frame.svg');
     background-repeat: no-repeat;
     background-position: center;
+  }
+  .nav-item{
+    padding: 1px 10px;
   }
 }
 
